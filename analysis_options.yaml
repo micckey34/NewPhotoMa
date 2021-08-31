@@ -1,0 +1,18 @@
+# https://pub.dev/packages/pedantic_mono
+include: package:pedantic_mono/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+  errors:
+    use_key_in_widget_constructors: ignore
+    avoid_print: ignore
+    lines_longer_than_80_chars: ignore
+
+linter:
+  rules:
+    - constant_identifier_names
